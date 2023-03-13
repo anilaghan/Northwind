@@ -1,11 +1,11 @@
 package kodlamaio.northwind.core.utilities.results;
 
-public class ErrorDataResult <T> extends DataResult{
-    public ErrorDataResult(Object data, String message) {
+public class ErrorDataResult <T> extends DataResult<T>{
+    public ErrorDataResult(T data, String message) {
         super(data, false,message);
     }
 
-    public ErrorDataResult(Object data){
+    public ErrorDataResult(T data){
         super(data,false);
     }
     public ErrorDataResult(String message) {
